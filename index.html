@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-branding">&lt;dennis&gt;</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#about-me" class="nav-link">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about-me" id="about-me">
+      <img src="img/icon.png" alt="" />
+      <div class="about-me-container">
+        <h1>Hi 👋, I'm Dennis</h1>
+        <p>
+          I'm an aspiring full-stack dev studying at Boston University. Eager to explore front-end design to back-end
+          functionality, with a keen interest in creating seamless user experiences. Excited to collab with diverse
+          teams to tackle complex challenges and deliver innovative solutions in the ever-evolving world of software
+          development.
+        </p>
+      </div>
+    </section>
+
+    <section class="my-skills" id="skills">
+      <h2 class="skills-title">Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <div class="circle-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-laptop"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"
+              />
+            </svg>
+          </div>
+          <h3>Languages</h3>
+          <ul>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>C</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <div class="circle-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-window"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"
+              />
+              <path
+                d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"
+              />
+            </svg>
+          </div>
+          <h3>Front-end</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <div class="circle-container">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-box-seam"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+              />
+            </svg>
+          </div>
+          <h3>Packages</h3>
+          <ul>
+            <li>Pandas</li>
+            <li>Bs4</li>
+            <li>Smtplib</li>
+            <li>Flask</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-portfolio" id="portfolio">
+      <h2 class="portfolio-title">Portfolio</h2>
+      <div class="projects">
+        <div class="project-item-container">
+          <a href="https://github.com/tabularization/stock-notify" target="_blank"><img src="img/stock.jpg" alt="stock chart" class="project-item" /></a>
+          <div class="text-overlay">
+            <p>STOCK NOTIFY</p>
+          </div>
+        </div>
+        <div class="project-item-container">
+          <a href="https://github.com/tabularization/sino-flash" target="_blank"><img src="img/card.jpg" alt="plane ticket" class="project-item" /></a>
+          <div class="text-overlay">
+            <p>SINO FLASH</p>
+          </div>
+        </div>
+        <div class="project-item-container">
+          <a href="https://github.com/tabularization/odin-recipes" target="_blank"><img src="img/koi.jpg" alt="japanese restaurant" class="project-item" /></a>
+          <div class="text-overlay">
+            <p>ODIN RECIPES</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <h2 class="footer-title">Contact Me</h2>
+        <div class="links">
+          <a href="https://github.com/tabularization" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="#272343"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+          <a href="https://www.linkedin.com/in/denniscse/" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-linkedin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+              /></svg
+          ></a>
+        </div>
+        <p>denniscs@bu.edu</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
