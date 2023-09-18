@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link` rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -22,7 +22,10 @@
             <a href="#skills" class="nav-link">Skills</a>
           </li>
           <li class="nav-item">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#project" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="Resume.pdf" class="nav-link">Resume</a>
           </li>
         </ul>
 
@@ -34,8 +37,8 @@
       </nav>
     </header>
 
-    <section class="about-me" id="about-me">
-      <img src="img/icon.png" alt="" />
+    <section class="hidden about-me" id="about-me">
+      <img src="img/icon-new.png" alt="" />
       <div class="about-me-container">
         <h1>Hi 👋, I'm Dennis</h1>
         <p>
@@ -47,21 +50,15 @@
       </div>
     </section>
 
-    <section class="my-skills" id="skills">
-      <h2 class="skills-title">Skills</h2>
-      <div class="skills">
+    <section class="hidden skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
         <div class="skill">
-          <div class="circle-container">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-laptop"
-              viewBox="0 0 16 16"
-            >
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" height="3rem" width="3rem" viewBox="0 0 640 512">
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
               <path
-                d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"
+                d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
               />
             </svg>
           </div>
@@ -69,55 +66,40 @@
           <ul>
             <li>Javascript</li>
             <li>Python</li>
-            <li>SQL</li>
+            <li>Java</li>
             <li>C</li>
           </ul>
         </div>
         <div class="skill">
-          <div class="circle-container">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-window"
-              viewBox="0 0 16 16"
-            >
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" height="3rem" width="3rem" viewBox="0 0 384 512">
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
               <path
-                d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"
-              />
-              <path
-                d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"
+                d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM153 289l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L71 337c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM265 255l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
               />
             </svg>
           </div>
           <h3>Front-end</h3>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
+            <li>HTML/CSS</li>
             <li>Bootstrap</li>
+            <li>React</li>
             <li>Git</li>
           </ul>
         </div>
         <div class="skill">
-          <div class="circle-container">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-box-seam"
-              viewBox="0 0 16 16"
-            >
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" height="3rem" width="3rem" viewBox="0 0 576 512">
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
               <path
-                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+                d="M290.8 48.6l78.4 29.7L288 109.5 206.8 78.3l78.4-29.7c1.8-.7 3.8-.7 5.7 0zM136 92.5V204.7c-1.3 .4-2.6 .8-3.9 1.3l-96 36.4C14.4 250.6 0 271.5 0 294.7V413.9c0 22.2 13.1 42.3 33.5 51.3l96 42.2c14.4 6.3 30.7 6.3 45.1 0L288 457.5l113.5 49.9c14.4 6.3 30.7 6.3 45.1 0l96-42.2c20.3-8.9 33.5-29.1 33.5-51.3V294.7c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-1.3-.5-2.6-.9-3.9-1.3V92.5c0-23.3-14.4-44.1-36.1-52.4l-96-36.4c-12.8-4.8-26.9-4.8-39.7 0l-96 36.4C150.4 48.4 136 69.3 136 92.5zM392 210.6l-82.4 31.2V152.6L392 121v89.6zM154.8 250.9l78.4 29.7L152 311.7 70.8 280.6l78.4-29.7c1.8-.7 3.8-.7 5.7 0zm18.8 204.4V354.8L256 323.2v95.9l-82.4 36.2zM421.2 250.9c1.8-.7 3.8-.7 5.7 0l78.4 29.7L424 311.7l-81.2-31.1 78.4-29.7zM523.2 421.2l-77.6 34.1V354.8L528 323.2v90.7c0 3.2-1.9 6-4.8 7.3z"
               />
             </svg>
           </div>
           <h3>Packages</h3>
           <ul>
             <li>Pandas</li>
-            <li>Bs4</li>
+            <li>BeautifulSoup</li>
             <li>Smtplib</li>
             <li>Flask</li>
           </ul>
@@ -125,31 +107,36 @@
       </div>
     </section>
 
-    <section class="my-portfolio" id="portfolio">
-      <h2 class="portfolio-title">Portfolio</h2>
-      <div class="projects">
-        <div class="project-item-container">
-          <a href="https://github.com/tabularization/stock-notify" target="_blank"><img src="img/stock.jpg" alt="stock chart" class="project-item" /></a>
-          <div class="text-overlay">
-            <p>STOCK NOTIFY</p>
+    <section class="hidden my-projects" id="project">
+      <div class="project-container">
+        <h2>Projects</h2>
+        <div class="project-cell-container">
+          <div class="project-cell">
+            <a href="https://github.com/tabularization/stock-notify" target="_blank">
+              <h3>Stock Notify</h3>
+              <img src="img/finance.png" alt="" />
+              <p>Stock bot designed to track financial prices.</p>
+            </a>
           </div>
-        </div>
-        <div class="project-item-container">
-          <a href="https://github.com/tabularization/sino-flash" target="_blank"><img src="img/card.jpg" alt="plane ticket" class="project-item" /></a>
-          <div class="text-overlay">
-            <p>SINO FLASH</p>
+          <div class="project-cell">
+            <a href="https://github.com/tabularization/sino-flash" target="_blank">
+              <h3>Sino Flash</h3>
+              <img src="img/working.png" alt="" />
+              <p>Flashcard app used to help users learn mandarin.</p>
+            </a>
           </div>
-        </div>
-        <div class="project-item-container">
-          <a href="https://github.com/tabularization/odin-recipes" target="_blank"><img src="img/koi.jpg" alt="japanese restaurant" class="project-item" /></a>
-          <div class="text-overlay">
-            <p>ODIN RECIPES</p>
-          </div>
+          <a href="https://github.com/tabularization/odin-recipes" target="_blank">
+            <div class="project-cell">
+              <h3>Odin Recipes</h3>
+              <img src="img/food.png" alt="" />
+              <p>Japanese recipes website designed with Bootstrap.</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="hidden footer">
       <div class="footer-container">
         <h2 class="footer-title">Contact Me</h2>
         <div class="links">
@@ -158,7 +145,7 @@
               xmlns="http://www.w3.org/2000/svg"
               width="50"
               height="50"
-              fill="#272343"
+              fill="currentColor"
               class="bi bi-github"
               viewBox="0 0 16 16"
             >
