@@ -395,6 +395,12 @@ a {
     margin-top: 1rem;
 }
 
+@media(min-width: 1280px) and (max-height: 900px) {
+    .footer {
+        margin-top: 20rem;
+    }
+}
+
 @media(max-width: 1024px) {
     .footer {
         font-size: 1.1rem;
